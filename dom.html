@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="dom.css" />
+  </head>
+  <body>
+    <form action="">
+      <label for="email">Email</label>
+      <input type="text" id="email" name="email" />
+      <label for="pwd">Password</label>
+      <input type="password" id="pwd" name="password" />
+      <div>
+        <label for="show-pwd">Show Password</label>
+        <input type="checkbox" id="show-pwd" onchange="tooglePassword()" />
+      </div>
+    </form>
+    <div class="container">
+      <button type="button" onclick="randomizeColor()">randomize-bg</button>
+    </div>
+    <section>
+      <div class="container">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+          dolor ipsam totam et quas omnis illo molestias ratione eos. Eos fuga
+          omnis non incidunt aut enim soluta delectus voluptatum labore!
+        </p>
+      </div>
+      <div>
+        <textarea name="" id="" rows="1" placeholder="type new" text here>
+        </textarea>
+        <button type="button" onclick="modifyText()">change teks</button>
+      </div>
+    </section>
+    <section class="container">
+      <div>
+        <input type="number" />
+        <button type="button" onclick="addEmptyList()">Add empty list</button>
+        <button type="button" onclick="resetEmptyList()">
+          Reset empty list
+        </button>
+      </div>
+      <ul>
+        <li>default</li>
+      </ul>
+      <div class="text-container">
+        <p class="text">initial text</p>
+      </div>
+      <div class="btn-collection">
+        <button type="button" onclick="insert('beforebegin')">
+          before begin
+        </button>
+        <button type="button" onclick="insert('afterbegin')">
+          after begin
+        </button>
+        <button type="button" onclick="insert('beforeend')">before end</button>
+        <button type="button" onclick="insert('afterend')">after end</button>
+      </div>
+    </section>
+    <script src="dom.js"></script>
+  </body>
+</html>
